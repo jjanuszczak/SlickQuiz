@@ -16,6 +16,7 @@ var quizJSON = {
     "questions": [
         { // Question 1
             "q": "What number is the letter A in the English alphabet?",
+            "i": "bulb.png",
             "a": [
                 {"option": "8",      "correct": false},
                 {"option": "14",     "correct": false},

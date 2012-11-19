@@ -94,7 +94,8 @@
 
                         var questionHTML = $('<li class="question" id="question' + (count - 1) + '"></li>');
                         questionHTML.append('<div class="questionCount">Question <span class="current">' + count + '</span> of <span class="total">' + questionCount + '</span></div>');
-                        questionHTML.append('<h3>' + count + '. ' + question.q + '</h3>');
+                        if (question.i != undefined) questionHTML.append('<img src=images/' + question.i + ' />');
+			questionHTML.append('<h3>' + count + '. ' + question.q + '</h3>');
 
                         // Count the number of true values
                         var truths = 0;
